@@ -1,10 +1,10 @@
 package personnages;
 
-public class Gaulois {
+public class Romain {
 	private String nom;
 	private int force;
 	
-	public Gaulois(String nom,int force)
+	public Romain(String nom,int force)
 	{
 		this.nom = nom;
 		this.force = force;
@@ -13,11 +13,13 @@ public class Gaulois {
 		return nom;
 	}
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("Astérix",8);
-		System.out.println(asterix.getNom());
+		Romain minus = new Romain("Minus",6);
+		System.out.println(minus.getNom());
 	}
 	public void parler(String text) {
-		System.out.println("Le gaulois"+ getNom() + ": <<" + text + ">>.");
-
+		System.out.println("Le romain"+ getNom() + ": <<" + text + ">>.");
 	}
+	public void recevoirCoup(int force)
+	
 }
+	
