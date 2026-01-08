@@ -12,4 +12,12 @@ public class Gaulois {
 	public String getNom() {
 		return nom;
 	}
+	public static void main(String[] args) {
+		Gaulois asterix = new Gaulois("Astérix",8);
+		System.out.println(asterix.getNom());
+	}
+	void parler(String text) {
+		System.out.println("Le gaulois"+ getNom() + ": <<" + text + ">>.");
+
+	}
 }
